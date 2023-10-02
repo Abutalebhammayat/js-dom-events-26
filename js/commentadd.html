@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment Add </title>
+</head>
+<body>
+    <div id="text-area" >
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis quam accusamus aliquid cupiditate corporis voluptas voluptates incidunt assumenda. Vitae dicta sequi, dolor voluptas maiores deserunt laborum dolorem velit ad minus Id similique asperiores doloribus quam tenetur veniam accusamus, necessitatibus quibusdam rerum expedita fugiat excepturi exercitationem eum ipsum commodi repudiandae qui debitis. Voluptates ratione adipisci dolorum repellendus non earId similique asperiores doloribus quam tenetur veniam accusamus, necessitatibus quibusdam rerum expedita fugiat excepturi exercitationem eum ipsum commodi repudiandae qui debitis. Voluptates ratione adipisci dolorum repellendus non earnobis ducimus voluptate quaerat accusamus quia! Eos repellendus, placeat tempore temporibus ex officia ut maxime, magnam nobis numquam voluptatem alias.</p>
+        <p>Id similique asperiores doloribus quam tenetur veniam accusamus, necessitatibus quibusdam rerum expedita fugiat excepturi exercitationem eum ipsum commodi repudiandae qui debitis. Voluptates ratione adipisci dolorum repellendus non earId similique asperiores doloribus quam tenetur veniam accusamus, necessitatibus quibusdam rerum expedita fugiat excepturi exercitationem eum ipsum commodi repudiandae qui debitis. Voluptates ratione adipisci dolorum repellendus non earId similique asperiores doloribus quam tenetur veniam accusamus, necessitatibus quibusdam rerum expedita fugiat excepturi exercitationem eum ipsum commodi repudiandae qui debitis. Voluptates ratione adipisci dolorum repellendus non earum rem sunt. Ratione assumenda consectetur eius, at perspiciatis, quisquam ea voluptate ab laudantium est, consequuntur voluptates. Libero et numquam obcaecati odit cupiditate.</p>
+        <p>Aliquid sed dolores fugiat optio earum facilis repudiandae qui eveniet magnam archId similique asperiores doloribus quam tenetur veniam accusamus, necessitatibus quibusdam rerum expedita fugiat excepturi exercitationem eum ipsum commodi repudiandae qui debitis. Voluptates ratione adipisci dolorum repellendus non earId similique asperiores doloribus quam tenetur veniam accusamus, necessitatibus quibusdam rerum expedita fugiat excepturi exercitationem eum ipsum commodi repudiandae qui debitis. Voluptates ratione adipisci dolorum repellendus non earitecto? Autem perferendis dolor reiciendis similique accusantium vitae animi minima ut! Autem corrupti consectetur magnam vitae, quaerat aspernatur eveniet quasi adipisci dolore hic eum numquam quae delectus! Vitae tempora dolor eos quia error et illo impedit dolorem labore quidem.</p>
+    </div>
+    <div>
+        <textarea name="" id="comment-box" cols="60" rows="5"></textarea>
+        <br><br>
+        <button id="comment-post">Post</button>
+    </div>
+
+
+    <script>
+        document.getElementById('comment-post').addEventListener('click', function(){
+            const commentBox = document.getElementById('comment-box');
+            const commentText =commentBox.value ;
+
+            const textArea = document.getElementById('text-area');
+            const p = document.createElement('p');
+            p.innerText = commentText ;
+            textArea.appendChild(p);
+
+            commentBox.value =  ' ';
+
+        });
+    </script>
+</body>
+</html>

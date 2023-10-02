@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github</title>
+</head>
+<body>
+    <h1 on>Lorem, ipsum dolor sit amet consectetur adipisicing.</h1>
+    <h1 id="title">Uttara amar basa, tumar basa koi </h1>
+    <input type="text" name="" id="input-delete" placeholder="please type delete">
+    <button id="btn-delete" disabled>Delete</button>
+    <script>
+        document.getElementById('input-delete').addEventListener('keyup', function(eveny){
+            const text =eveny.target.value;
+            const buttonDelete = document.getElementById('btn-delete')
+            if(text === 'delete'){
+                buttonDelete.removeAttribute('disabled')
+            }
+            else{
+                buttonDelete.setAttribute('disabled', true)
+            }
+        })
+        document.getElementById('btn-delete').addEventListener('click',function(){
+            const textHeading = document.getElementById('title')
+            textHeading.style.display ='none';
+        })
+
+    </script>
+</body>
+</html>
